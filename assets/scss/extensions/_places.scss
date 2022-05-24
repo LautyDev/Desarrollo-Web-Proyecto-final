@@ -1,0 +1,125 @@
+@import './colors';
+
+/* Lugares */
+
+.topic {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+
+    .item {
+        box-shadow:  5px 5px 5px $black1;
+        height: 250px;
+        width: 300px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 2rem;
+            color: white;
+            text-transform: uppercase;
+            background-color: $black2;
+            padding: 1rem 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    #AR {
+        background-image: url("../img/places/Argentina.png");
+    }
+
+    #BR {
+        background-image: url("../img/places/Brazil.png");
+    }
+    
+    #UY {
+        background-image: url("../img/places/Uruguay.png");
+    }
+
+    #IT {
+        background-image: url("../img/places/Italy.jpg");
+    }
+
+    #ES {
+        background-image: url("../img/places/Spain.jpg");
+    }
+
+    #FR {
+        background-image: url("../img/places/France.jpg");
+    }
+
+    #MX{
+        background-image: url("../img/places/Mexico.jpg");
+    }
+
+    #DE {
+        background-image: url("../img/places/Germany.jpg");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .item {
+        transition: all 550ms ease-in;
+    }
+
+    .item:hover {
+        box-shadow:  5px 5px 15px $black1;
+        text-shadow: 2px 2px 5px $black3;
+        transform: scale(1.1);
+    }
+}
+
+/* Nuevos lugares */
+
+.places {
+    #PT {
+        background-image: url("../img/places/Portugal.jpg");
+    }
+
+    #UK {
+        background-image: url("../img/places/United\ Kingdom.jpeg");
+    }
+
+    #US {
+        background-image: url("../img/places/United\ States.jpg");
+    }
+
+    #CO {
+        background-image: url("../img/places/Colombia.jpg");
+    }
+
+    #EC {
+        background-image: url("../img/places/Ecuador.jpg");
+    }
+
+    #PE {
+        background-image: url("../img/places/Peru.jpg");
+    }
+
+    #CH {
+        background-image: url("../img/places/China.jpg");
+    }
+
+    #PR {
+        background-image: url("../img/places/Puerto\ Rico.jpg");
+    }
+}

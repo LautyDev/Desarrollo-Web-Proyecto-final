@@ -1,0 +1,201 @@
+<!-- 
+    Vea este desafío en mi página web
+    https://finalprojectdw.lauty.dev
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script defer src="http://code.jquery.com/jquery-latest.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script defer src="./assets/js/script.js"></script>
+
+    <meta name="theme-color" content="#5f1aea">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finalprojectdw.lauty.dev">
+    <meta property="og:site_name" content="LautyDev Website">
+    <meta property="og:title" content="CoderHouse - Desarrollo web - Proyecto final">
+    <meta property="og:description" content="Página de turismo para el proyecto final de desarrollo web de CoderHouse">
+    <meta property="og:image" content="https://finalprojectdw.lauty.dev/assets/img/TuriCorp.png">
+
+    <title>TuriCorp 🗻</title>
+    <meta name="description" content="¡Encuentra los mejores lugares turísticos del mundo!">
+    <meta name="keywords" content="turismo, turistico, paises, lugares">
+
+</head>
+<body>
+    <header>
+        <!-- NavBar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.svg" alt="icon">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#places">Lugares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#new-places">Nuevos lugares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Home -->
+
+          <div class="home">
+              <div class="home_brand">
+                    <h1>Turi<span>Corp</span></h1>
+                    <div class="home_brand-buttons">
+                        <button id="liveToastBtn"><a href="#places">Lugares</a></button>
+                        <button><a data-bs-toggle="modal" data-bs-target="#contactModal">Contacto</a></button>
+                    </div>
+              </div>
+              <img src="./assets/img/heroImage.svg" alt="HeroImage">
+          </div>
+    </header>
+    <main>
+        <!-- Lugares -->
+
+        <div class="topic">
+            <h2>Lugares</h2>
+        </div>
+        <div class="places" id="places">
+            <article class="item" id="AR">
+                <h2>Argentina</h2>
+            </article>
+            <article class="item" id="BR">
+                <h2>Brasil</h2>
+            </article>
+            <article class="item" id="UY">
+                <h2>Uruguay</h2>
+            </article>
+            <article class="item" id="IT">
+                <h2>Italia</h2>
+            </article>
+            <article class="item" id="ES">
+                <h2>España</h2>
+            </article>
+            <article class="item" id="FR">
+                <h2>Francia</h2>
+            </article>
+            <article class="item" id="MX">
+                <h2>México</h2>
+            </article>
+            <article class="item" id="DE">
+                <h2>Alemania</h2>
+            </article>
+        </div>
+
+        <!-- Nuevos lugares -->
+
+        <div class="topic">
+            <h2>Nuevos lugares</h2>
+        </div>
+        <div class="places" id="new-places">
+            <article class="item" id="PT">
+                <h2>Portugal</h2>
+            </article>
+            <article class="item" id="UK">
+                <h2>Reino Unido</h2>
+            </article>
+            <article class="item" id="US">
+                <h2>Estados Unidos</h2>
+            </article>
+            <article class="item" id="CO">
+                <h2>Colombia</h2>
+            </article>
+            <article class="item" id="EC">
+                <h2>Ecuador</h2>
+            </article>
+            <article class="item" id="PE">
+                <h2>Perú</h2>
+            </article>
+            <article class="item" id="CH">
+                <h2>China</h2>
+            </article>
+            <article class="item" id="PR">
+                <h2>Puerto Rico</h2>
+            </article>
+        </div>
+
+        <!-- Contacto -->
+
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="contactModal-label">Contacto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact">
+                        <form action="https://formspree.io/f/xqknlznp" method="post" class="formContact">
+                            <input type="text" name="Nombre" placeholder="Nombre*" required>
+                            <input type="text" name="Apellido" placeholder="Apellido*" required>
+                            <input type="email" name="Correo" placeholder="Correo*" required>
+                            <input type="tel" name="Teléfono" placeholder="Teléfono*" required>
+                            <textarea name="Mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                            <div class="buttonsContact">
+                                <button type="submit" class="submit">Enviar</button>
+                                <button type="reset" class="reset">Limpiar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notificación de "Nuevos lugares" -->
+
+          <div class="position-fixed bottom-0 end-0 p-3" data-bs-animation="true" data-bs-autohide="true" data-bs-delay="5000" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">               
+                <strong class="me-auto">TuriCorp</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                ¿¡Ya viste nuestros nuevos lugares!?
+                <div class="mt-2 pt-2 border-top">
+                    <button class="toastButton"><a href="#new-places">¡Ir a verlos!</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón de "Ir al cielo" -->
+
+          <div class="up bx bx-up-arrow-alt"></div>
+    </main>
+    <footer>
+        <div class="box containerSocial">
+            <div class="social"><a href="https://instagram.com/lautydev/" target="_blank"><i class='bx bxl-instagram'></i></a></div>
+            <div class="social"><a href="https://github.com/LautyDev/" target="_blank"><i class='bx bxl-github'></i></a></div>
+            <div class="social"><a href="https://www.linkedin.com/in/lauty-chavero-415b03239/" target="_blank"><i class='bx bxl-linkedin-square'></i></a></div>
+        </div>
+        <h2>Turi<span>Corp</span></h2>
+        <h6>Made by Lautaro Chavero</h6>
+    </footer>
+</body>
+</html>

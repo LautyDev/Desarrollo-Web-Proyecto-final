@@ -1,0 +1,15 @@
+@import './colors';
+
+.toastButton {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: $purple;
+    color: white;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

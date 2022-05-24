@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* General */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth; }
+
+/* Main */
+main {
+  background-color: #5f1aea; }
+
+/* NavBar */
+.navbar {
+  background-color: #5f1aea; }
+  .navbar .nav-item {
+    cursor: pointer; }
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px; }
+
+/* Home */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+  .home .home_brand h1 {
+    font-size: 5rem;
+    padding-bottom: 2rem; }
+    .home .home_brand h1 span {
+      color: #5f1aea; }
+  .home .home_brand div.home_brand-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: self-start; }
+    .home .home_brand div.home_brand-buttons button {
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 7px;
+      background-color: #5f1aea;
+      color: white;
+      cursor: pointer;
+      padding: 0.5rem; }
+    .home .home_brand div.home_brand-buttons a {
+      text-decoration: none;
+      color: white; }
+
+@media screen and (min-width: 768px) {
+  .home {
+    flex-direction: row; }
+    .home img {
+      transition: all 550ms ease-in; }
+    .home img:hover {
+      transform: scale(1.1); }
+    .home div.home_brand-buttons button {
+      transition: all 550ms ease-in; }
+    .home div.home_brand-buttons button:hover {
+      transform: scale(1.1); } }
+
+/* Lugares y Nuevos lugares */
+/* Lugares */
+.topic {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+  .topic h2 {
+    font-size: 3rem; }
+
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem; }
+  .places .item {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    height: 250px;
+    width: 300px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .places .item h2 {
+      font-size: 2rem;
+      color: white;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 1rem 0;
+      width: 100%;
+      text-align: center; }
+  .places #AR {
+    background-image: url("../img/places/Argentina.png"); }
+  .places #BR {
+    background-image: url("../img/places/Brazil.png"); }
+  .places #UY {
+    background-image: url("../img/places/Uruguay.png"); }
+  .places #IT {
+    background-image: url("../img/places/Italy.jpg"); }
+  .places #ES {
+    background-image: url("../img/places/Spain.jpg"); }
+  .places #FR {
+    background-image: url("../img/places/France.jpg"); }
+  .places #MX {
+    background-image: url("../img/places/Mexico.jpg"); }
+  .places #DE {
+    background-image: url("../img/places/Germany.jpg"); }
+
+@media screen and (min-width: 768px) {
+  .item {
+    transition: all 550ms ease-in; }
+  .item:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1); } }
+
+/* Nuevos lugares */
+.places #PT {
+  background-image: url("../img/places/Portugal.jpg"); }
+
+.places #UK {
+  background-image: url("../img/places/United Kingdom.jpeg"); }
+
+.places #US {
+  background-image: url("../img/places/United States.jpg"); }
+
+.places #CO {
+  background-image: url("../img/places/Colombia.jpg"); }
+
+.places #EC {
+  background-image: url("../img/places/Ecuador.jpg"); }
+
+.places #PE {
+  background-image: url("../img/places/Peru.jpg"); }
+
+.places #CH {
+  background-image: url("../img/places/China.jpg"); }
+
+.places #PR {
+  background-image: url("../img/places/Puerto Rico.jpg"); }
+
+/* Footer */
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; }
+  footer .box {
+    display: flex; }
+  footer .containerSocial {
+    justify-content: space-evenly;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem; }
+  footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5f1aea;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 1.8rem; }
+    footer .social a {
+      text-decoration: none;
+      color: white; }
+  footer h2 {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    text-align: center; }
+    footer h2 span {
+      color: #5f1aea; }
+  footer h6 {
+    text-align: center;
+    padding: 10px; }
+
+@media screen and (min-width: 768px) {
+  .social {
+    transition: all 550ms ease-in; }
+  .social:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1); } }
+
+/* Contact */
+.contact {
+  min-height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  .contact .formContact {
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    .contact .formContact h2 {
+      text-align: center;
+      margin-bottom: 1rem; }
+    .contact .formContact input {
+      height: 2.5rem;
+      padding: 1rem;
+      outline: none;
+      margin-bottom: 1rem;
+      border-radius: 7px;
+      border-color: rgba(0, 0, 0, 0.2); }
+    .contact .formContact textarea {
+      padding: 1rem;
+      resize: none;
+      margin-bottom: 1rem;
+      border-radius: 7px;
+      border-color: rgba(0, 0, 0, 0.3); }
+    .contact .formContact .buttonsContact {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center; }
+      .contact .formContact .buttonsContact button {
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 7px;
+        cursor: pointer;
+        background-color: #5f1aea;
+        color: white; }
+
+@media screen and (min-width: 768px) {
+  .contact .formContact .buttonsContact button {
+    transition: all 550ms ease-in; }
+  .contact .formContact .buttonsContact button:hover {
+    transform: scale(1.1); } }
+
+/* Notificación de "Nuevos lugares" */
+.toastButton {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5f1aea;
+  color: white; }
+  .toastButton a {
+    text-decoration: none;
+    color: white; }
+
+/* Botón de "Ir al cielo" */
+div.up {
+  display: none;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+  color: #5f1aea;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%; }

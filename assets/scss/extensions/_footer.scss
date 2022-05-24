@@ -1,0 +1,66 @@
+@import './colors';
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .box {
+        display: flex;
+    }
+    
+    .containerSocial {
+        justify-content: space-evenly;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $purple;
+        box-shadow: 5px 5px 5px $black1;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-size: 1.8rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    h2 {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+        text-align: center;
+
+        span {
+            color: $purple;
+        }
+    }
+    
+    h6 {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .social {
+        transition: all 550ms ease-in;
+    }
+        
+    .social:hover {
+        box-shadow: 5px 5px 15px $black1;
+        color: white;
+        text-shadow: 2px 2px 5px $black3;
+        transform: scale(1.1);
+    }  
+}
